@@ -4,6 +4,7 @@ import { CommonModule }           from '@angular/common';
 import { CoursesRoutingModule }   from './courses-routing.module';
 import { CoursesComponent }       from './courses/courses.component';
 import { AppMaterialModule }      from 'src/shared/app-material/app-material.module';
+import { SharedModule }           from 'src/shared/shared.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { AppMaterialModule }      from 'src/shared/app-material/app-material.mod
   imports: [
     CommonModule,
     CoursesRoutingModule,
-    AppMaterialModule
+    AppMaterialModule,
+    SharedModule
   ]
 })
 export class CoursesModule { }
